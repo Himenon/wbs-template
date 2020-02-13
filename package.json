@@ -1,0 +1,27 @@
+{
+  "name": "@himenon/wbs-template",
+  "version": "1.0.0",
+  "description": "Work Breakdown Structure Template",
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "name": "Himenon",
+    "url": "https://github.com/Himenon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Himenon/wbs-template.git"
+  },
+  "scripts": {
+    "start": "run-p gen:report:g3:watch server",
+    "gen:report:g3": "wbsm report -m ./src/index.md -r ./docs/index.html",
+    "gen:report:g3:watch": "wbsm watch -m ./src/index.md -r ./docs/index.html",
+    "server": "live-server ./docs"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "nodemon": "^2.0.2",
+    "npm-run-all": "^4.1.5",
+    "wbs-markdown": "^1.1.4"
+  }
+}
