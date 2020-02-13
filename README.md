@@ -4,7 +4,9 @@
 
 ```
 yarn
+yarn start
 ```
 
+## License
 
-
+MIT
